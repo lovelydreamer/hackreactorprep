@@ -1,0 +1,32 @@
+
+h1 { 
+	color: red;
+}
+
+<!-- removes border around linked images, makes square-ish -->
+	 	img > a {
+  		border: none;
+		}
+
+/*.photo {
+    text-align: center; for centering images inside
+}
+*/
+img {
+    width: 300px; /*set the width or max-width*/
+    height: auto; /*this makes sure to maintain the aspect ratio*/
+}
+
+header {
+	color: blue;
+	text-align: justify;
+
+}
+header > h3 {
+	text-align: right;
+}
+
+
+.menuBar {
+	font-size: 20;
+}
