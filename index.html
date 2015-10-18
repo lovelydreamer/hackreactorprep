@@ -16,101 +16,229 @@
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <!--CSS styles I choose for clarity, must be AFTER bootstrap -->
     <link rel="stylesheet" type="text/css" href="custom.css">
-    <title> Catastrophe! Cat Costumes Web Store </title>
 </head>
 <header>
-    <div class="well well-md">
-        <h1> Cat Costumes Emporium </h1>
-        <h2> For the Fancy Feline Lover </h2>
-        <h3><small> they're purrfect </small></h3> </header>
-</div>
-<!-- HTML5 uses nav instead of divs w/ids -->
-<nav>
-    <div class="menuBar">
-        <div class="col-md-3"> menu 1 </div>
-        <div class="col-md-3"> menu 2 </div>
-        <div class="col-md-3"> menu 3 </div>
-        <div class="col-md-3"> menu 4 </div>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html">Cat Costumes Emporium</a>
+            </div>
+            <div>
+                <ul class="nav navbar-nav">
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <title> Catastrophe! Cat Costumes Web Store </title>
+    <div id="slogan">
+        <p> Cat costumes are purrfectly playful </small>
+            </h2>
     </div>
-</nav>
+</header>
 <!-- HTML5 uses section instead of divs w/ids -->
 
 <body>
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="productphoto" id="product1_biker">
-                        <img src="imagesResized/biker.jpg" height="497" width="497">
-                    </div>
-                    <p> Badass Biker Cat </p>
+
+<!-- row of 3 top -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="productphoto" id="product1_biker">
+                    <a href="itemDetailPages/bikerProd.html">
+                        <img src="imagesResized/biker.jpg" class="img-circle" height="497" width="497">
+                        <div class="col-xs-7" class="title"> Badass Biker Cat </div>
+                        <div class="col-xs-5" class="price"> $12.99 </div>
+                        <div class="productTagline">
+                            <ul>
+                                <li>Perfect for Sons of Anarchy marathons.</li>
+                                <li>Made from vegan leather.</li>
+                                <li>Handwash only.</li>
+                                <li>Goggles not included.</li>
+                            </ul>
+                        </div>
+                    </a>
                 </div>
-                <div class="col-md-4">
-                    <div class="productphoto" id="product2_Sando">
-                        <img src="imagesResized/catSando.jpg" height="500" width="500">
+            </div>
+            <div class="col-md-4">
+                <div class="productphoto" id="product2_Sando">
+                    <img src="imagesResized/catSando.jpg" class="img-circle" height="500" width="500">
+                    <div class="col-xs-7" class="title"> Kitten Noms </div>
+                    <div class="col-xs-5" class="price"> $4.99 </div>
+                    <div class="productTagline">
+                        <ul>
+                            <li>For when you're bored</li>
+                            <li>Made from wheat.</li>
+                            <li>Handwash only.</li>
+                            <li>No kittens were harmed in the making of this sandwich.</li>
+                        </ul>
                     </div>
-                    <p> Kitten Noms</p>
                 </div>
-                <div class="col-md-4">
-                    <div class="productphoto" id="product3_devilCat">
-                        <img src="imagesResized/devil_cat.jpg" height="564" width="564">
-                    </div>
-                    <p> Devil Cat Costume </p>
+            </div>
+            <div class="col-md-4">
+                <div class="productphoto" id="product3_devilCat">
+                    <img src="imagesResized/devil_cat.jpg" class="img-circle" height="564" width="564">
                 </div>
-                <div class="col-md-4">
-                    <div class="productPhoto" id="product4_frog">
-                        <img src="imagesResized/frog.jpg" height="513" width="513">
-                    </div>
-                    <p> Hoppety Hip Kitten </p>
+                <div class="col-xs-7" class="title"> Devilishly Cute </div>
+                <div class="col-xs-5" class="price"> $4.99 </div>
+                <div class="productTagline">
+                    <ul>
+                        <li>Because Why not?</li>
+                        <li>Made from satin.</li>
+                        <li>Handwash only.</li>
+                        <li>Use with extreme caution.</li>
+                        <br>
+                    </ul>
                 </div>
-                <div class="col-md-4">
-                    <div class="productPhoto" id="product6_vacationCat">
-                        <img src="imagesResized/hawaiian.jpg" height="940" width="940">
-                    </div>
-                    <p> Hawaiian Vacation Cat </p>
+            </div>
+
+<!-- row of 3 second -->            
+            <div class="col-md-4">
+                <div class="productPhoto" id="product4_frog">
+                    <img src="imagesResized/frog.jpg" class="img-circle" height="513" width="513">
                 </div>
-                <div class="col-md-4">
-                    <div class="productPhoto" id="product7_sanrio">
-                        <img src="imagesResized/helloKitty.jpg" height="599" width="599">
-                    </div>
-                    <p> Sanrio Hello Kitty </p>
+                <div class="col-xs-7" class="title"> Hoppety Hip Kitten </div>
+                <div class="col-xs-5" class="price"> $9.99 </div>
+                <div class="productTagline">
+                    <ul>
+                        <li>When your cat has endless energy</li>
+                        <li>Made from wood.</li>
+                        <li>Air dry.</li>
+                        <li>Do not drop in a lake.</li>
+                        <br>
+                    </ul>
                 </div>
-                <div class="col-md-4">
-                    <div class="productPhoto" id="product8_lobsterCat">
-                        <img src="imagesResized/lobsterCat.jpg" height="438" width="438">
-                    </div>
-                    <p> Rock Lobster Cat </p>
+            </div>
+            <div class="col-md-4">
+                <div class="productPhoto" id="product6_vacationCat">
+                    <img src="imagesResized/hawaiian.jpg" class="img-circle" height="940" width="940">
                 </div>
-                <div class="col-md-4">
-                    <div class="productPhoto" id="product9_lion">
-                        <img src="imagesResized/lion.jpg" height="591" width="591">
-                    </div>
-                    <p> King of the Felines </p>
+                <div class="col-xs-7" class="title"> Hawaiian Vacation Cat </div>
+                <div class="col-xs-5" class="price"> $11.99 </div>
+                <div class="productTagline">
+                    <ul>
+                        <li>Great for BBQ season.</li>
+                        <li>Made from faux florals.</li>
+                        <li>Not for consumption</li>
+                        <li>Perfect for naps.</li>
+                        <br>
+                    </ul>
                 </div>
-                <div class="col-md-4">
-                    <div class="productPhoto" id="product10_pussInBoots">
-                        <img src="imagesResized/pussInBoots.jpg" height="553" width="553">
-                    </div>
-                    <p> Puss In Boots </p>
+            </div>
+            <div class="col-md-4">
+                <div class="productPhoto" id="product7_sanrio">
+                    <img src="imagesResized/helloKitty.jpg" class="img-circle" height="599" width="599">
                 </div>
-                <div class="col-md-4">
-                    <div class="productPhoto" id="product4_princess">
-                        <img src="imagesResized/fairyPrincess.jpg" height="940" width="940">
-                    </div>
-                    <p> Your little Princess </p>
+                <div class="col-xs-7" class="title"> Sanrio Hello Kitty </div>
+                <div class="col-xs-5" class="price"> $10.99 </div>
+                <div class="productTagline">
+                    <ul>
+                        <li>Purrrfectly feline</li>
+                        <li>Made from smurfs.</li>
+                        <li>For all ages.</li>
+                        <br>
+                        <br>
+                    </ul>
                 </div>
-                <div class="col-md-4">
-                    <div class="productphoto" id="product3_wizard">
-                        <img src="imagesResized/catWizard.jpg" height="500" width="500">
-                    </div>
-                    <p> Wizard </p>
+            </div>
+
+<!-- row of 3 - third -->
+            <div class="col-md-4">
+                <div class="productPhoto" id="product8_lobsterCat">
+                    <img src="imagesResized/lobsterCat.jpg" class="img-circle" height="438" width="438">
+                </div>
+                <div class="col-xs-7" class="title"> Rock Lobster Cat </div>
+                <div class="col-xs-5" class="price"> $10.99 </div>
+                <div class="productTagline">
+                    <ul>
+                        <li>When your cat is crabby, cheer them up with a costume! </li>
+                        <li>Made from faux crustation. </li>
+                        <li>Machiene wash cold. </li>
+                        <li>Do not boil.</li>
+                        <br>
+                    </ul>
+                    <p> </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="productPhoto" id="product9_lion">
+                    <img src="imagesResized/lion.jpg" class="img-circle" height="591" width="591">
+                </div>
+                <div class="col-xs-7" class="title"> King of the Felines </div>
+                <div class="col-xs-5" class="price"> $10.99 </div>
+                <div class="productTagline">
+                    <ul>
+                        <li>A Roaring good time.</li>
+                        <li>Made from 100% fun.</li>
+                        <li>Not created for taming.</li>
+                        <li>Safari sold separately.</li>
+                        <br>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="productPhoto" id="product10_pussInBoots">
+                    <img src="imagesResized/pussInBoots.jpg" class="img-circle" height="553" width="553">
+                </div>
+                <div class="col-xs-7" class="title"> Puss In Boots </div>
+                <div class="col-xs-5" class="price"> $10.99 </div>
+                <div class="productTagline">
+                    <ul>
+                        <li>All that I need, are the boots!</li>
+                        <li>You made the cat angry. You do not want to make the cat angry.</li>
+                        <li>Hello? You are hiding from me? I like to play the games too. </li>
+                        <br>
+                    </ul>
+                </div>
+            </div>
+
+<!-- row of 2 -  bottom -->
+            <div class="col-md-4">
+                <div class="productPhoto" id="product4_princess">
+                    <img src="imagesResized/fairyPrincess.jpg" class="img-circle" height="940" width="940">
+                </div>
+                <div class="col-xs-7" class="title">Fluffy Princess </div>
+                <div class="col-xs-5" class="price"> $10.99 </div>
+                <div class="productTagline">
+                    <ul>
+                        <li>Once upon a time in a faraway land,</li>
+                        <li>there was a tiny kingdom;</li>
+                        <li>peaceful, prosperous,</li>
+                        <li>and rich in romance and tradition.</li>
+                        <br>
+                    </ul>
+                    <p> </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="productphoto" id="product3_wizard">
+                    <img src="imagesResized/catWizard.jpg" class="img-circle" height="500" width="500">
+                </div>
+                <div class="col-xs-7" class="title">Wizard </div>
+                <div class="col-xs-5" class="price"> $8.99 </div>
+                <div class="productTagline">
+                    <ul>
+                        <li> It does not do to dwell on dreams and forget to live.
+                        </li>
+                        <li>Hermione: It's a cat, Ronald!</li>
+                        <li>A cat? Is that what they told you?</li>
+                        <li>It looks more like a pig with hair if you ask me.</li>
+                        <br>
+                    </ul>
+                    <p> </p>
+                    <p> </p>
                 </div>
             </div>
         </div>
-    </section>
-</body>
-<!-- HTML5 uses footer instead of divs w/ids -->
-<footer>
-</footer>
+    </div>
+    <!-- HTML5 uses footer instead of divs w/ids -->
+    <footer class="footer">
+        <div class="container">
+            <p class="text-muted"> Company information and social share buttons </p>
+        </div>
+    </footer>
 
 </html>

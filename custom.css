@@ -1,32 +1,81 @@
 
-h1 { 
-	color: red;
+
+/*
+.navbar-header {
+	background-color: rgba(0, 44, 240, 0.88);
 }
 
-<!-- removes border around linked images, makes square-ish -->
-	 	img > a {
-  		border: none;
-		}
-
-/*.photo {
-    text-align: center; for centering images inside
-}
-*/
-img {
-    width: 300px; /*set the width or max-width*/
-    height: auto; /*this makes sure to maintain the aspect ratio*/
+<!-- this colors login -->
+.navbar-right {
+	background-color: rgba(0, 153, 255, 1) ;
 }
 
-header {
-	color: blue;
-	text-align: justify;
+*/		
 
+.navbar-inverse {
+	background-color: #385E0F	;
+	border-bottom: 5px;
+	box-shadow: 10px;
 }
+
+#slogan { 
+	color: black;
+	text-align: center;
+	font-size: 100%;
+	font-size: 25px;
+}
+
+.container {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+body {
+	background-color : #FFEFDB;
+}
+
+
 header > h3 {
 	text-align: right;
 }
 
 
-.menuBar {
-	font-size: 20;
+<!-- images section -- >
+<!-- removes border around linked images, makes square-ish -->
+	 	img > a {
+  		border: none;
+		}
+
+img {
+    width: 300px; /*set the width or max-width*/
+    height: auto; /*this makes sure to maintain the aspect ratio*/
 }
+
+
+<!-- product row container test -->
+
+.productPhoto {
+	padding: 10px;
+	border: 1px;
+	margin-left: 28px;
+	margin-bottom: 28px; 
+	background-color: white;
+
+}
+
+<!-- individual prod drop shadow test -->
+
+
+<!-- text for photos -->
+div:first-child {
+  font-size: 30px;
+}
+
+div ul {
+list-style: none;
+}
+
+div ul li {
+list-style: none;
+}
+
