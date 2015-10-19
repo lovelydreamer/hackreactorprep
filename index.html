@@ -5,8 +5,6 @@
     <meta charset="utf-8">
     <!-- for mobile responsiveness -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Styles & Picked and Choose -->
-    <link src="javascript.js">
     <!--- following three links are for bootstrap libraries 
 		Latest compiled and minified CSS  -->
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -16,6 +14,7 @@
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <!--CSS styles I choose for clarity, must be AFTER bootstrap -->
     <link rel="stylesheet" type="text/css" href="custom.css">
+
 </head>
 <header>
     <nav class="navbar navbar-inverse">
@@ -33,212 +32,449 @@
             </div>
         </div>
     </nav>
-    <title> Catastrophe! Cat Costumes Web Store </title>
+    <title> Pet-tastrophe! Pet Costumes Web Store </title>
     <div id="slogan">
-        <p> Cat costumes are purrfectly playful </small>
-            </h2>
+        <h2><small> For the cat's meow and dogs happy tail.</small></h2>       
     </div>
 </header>
 <!-- HTML5 uses section instead of divs w/ids -->
 
 <body>
 
-<!-- row of 3 top -->
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4">
-                <div class="productphoto" id="product1_biker">
-                    <a href="itemDetailPages/bikerProd.html">
-                        <img src="imagesResized/biker.jpg" class="img-circle" height="497" width="497">
-                        <div class="col-xs-7" class="title"> Badass Biker Cat </div>
-                        <div class="col-xs-5" class="price"> $12.99 </div>
-                        <div class="productTagline">
-                            <ul>
-                                <li>Perfect for Sons of Anarchy marathons.</li>
-                                <li>Made from vegan leather.</li>
-                                <li>Handwash only.</li>
-                                <li>Goggles not included.</li>
-                            </ul>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="productphoto" id="product2_Sando">
-                    <img src="imagesResized/catSando.jpg" class="img-circle" height="500" width="500">
-                    <div class="col-xs-7" class="title"> Kitten Noms </div>
-                    <div class="col-xs-5" class="price"> $4.99 </div>
-                    <div class="productTagline">
-                        <ul>
-                            <li>For when you're bored</li>
-                            <li>Made from wheat.</li>
-                            <li>Handwash only.</li>
-                            <li>No kittens were harmed in the making of this sandwich.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="productphoto" id="product3_devilCat">
-                    <img src="imagesResized/devil_cat.jpg" class="img-circle" height="564" width="564">
-                </div>
-                <div class="col-xs-7" class="title"> Devilishly Cute </div>
-                <div class="col-xs-5" class="price"> $4.99 </div>
-                <div class="productTagline">
-                    <ul>
-                        <li>Because Why not?</li>
-                        <li>Made from satin.</li>
-                        <li>Handwash only.</li>
-                        <li>Use with extreme caution.</li>
-                        <br>
-                    </ul>
-                </div>
-            </div>
+<!-- row of 3 top cats -->
+<div class="catStore">
+ <div class="row">
+		<div class="col-md-4">
+			<div id="bikerCat" class="catCostume">
+			</div>                  
+		</div>
+	 </div>
+	<div class="col-md-4">
+	   <div id="sandwichCat" class="catCostume">
+	   </div>
+	</div>
+	<div class="col-md-4">
+		<div id="diabloKitty" class="catCostume">
+		</div>
+	</div>
 
-<!-- row of 3 second -->            
-            <div class="col-md-4">
-                <div class="productPhoto" id="product4_frog">
-                    <img src="imagesResized/frog.jpg" class="img-circle" height="513" width="513">
-                </div>
-                <div class="col-xs-7" class="title"> Hoppety Hip Kitten </div>
-                <div class="col-xs-5" class="price"> $9.99 </div>
-                <div class="productTagline">
-                    <ul>
-                        <li>When your cat has endless energy</li>
-                        <li>Made from wood.</li>
-                        <li>Air dry.</li>
-                        <li>Do not drop in a lake.</li>
-                        <br>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="productPhoto" id="product6_vacationCat">
-                    <img src="imagesResized/hawaiian.jpg" class="img-circle" height="940" width="940">
-                </div>
-                <div class="col-xs-7" class="title"> Hawaiian Vacation Cat </div>
-                <div class="col-xs-5" class="price"> $11.99 </div>
-                <div class="productTagline">
-                    <ul>
-                        <li>Great for BBQ season.</li>
-                        <li>Made from faux florals.</li>
-                        <li>Not for consumption</li>
-                        <li>Perfect for naps.</li>
-                        <br>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="productPhoto" id="product7_sanrio">
-                    <img src="imagesResized/helloKitty.jpg" class="img-circle" height="599" width="599">
-                </div>
-                <div class="col-xs-7" class="title"> Sanrio Hello Kitty </div>
-                <div class="col-xs-5" class="price"> $10.99 </div>
-                <div class="productTagline">
-                    <ul>
-                        <li>Purrrfectly feline</li>
-                        <li>Made from smurfs.</li>
-                        <li>For all ages.</li>
-                        <br>
-                        <br>
-                    </ul>
-                </div>
-            </div>
+	<!-- row of 3 second cats-->            
+	<div class="col-md-4">
+	   <div id="frogKitten" class="catCostume">
+	   </div> 
+	</div>
+	<div class="col-md-4">
+	   <div id="hawaiianVacation" class="catCostume">
+	   </div>
+	</div>
+	<div class="col-md-4">
+	   <div id="sanrioCat" class="catCostume">
+	   </div>
 
-<!-- row of 3 - third -->
-            <div class="col-md-4">
-                <div class="productPhoto" id="product8_lobsterCat">
-                    <img src="imagesResized/lobsterCat.jpg" class="img-circle" height="438" width="438">
-                </div>
-                <div class="col-xs-7" class="title"> Rock Lobster Cat </div>
-                <div class="col-xs-5" class="price"> $10.99 </div>
-                <div class="productTagline">
-                    <ul>
-                        <li>When your cat is crabby, cheer them up with a costume! </li>
-                        <li>Made from faux crustation. </li>
-                        <li>Machiene wash cold. </li>
-                        <li>Do not boil.</li>
-                        <br>
-                    </ul>
-                    <p> </p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="productPhoto" id="product9_lion">
-                    <img src="imagesResized/lion.jpg" class="img-circle" height="591" width="591">
-                </div>
-                <div class="col-xs-7" class="title"> King of the Felines </div>
-                <div class="col-xs-5" class="price"> $10.99 </div>
-                <div class="productTagline">
-                    <ul>
-                        <li>A Roaring good time.</li>
-                        <li>Made from 100% fun.</li>
-                        <li>Not created for taming.</li>
-                        <li>Safari sold separately.</li>
-                        <br>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="productPhoto" id="product10_pussInBoots">
-                    <img src="imagesResized/pussInBoots.jpg" class="img-circle" height="553" width="553">
-                </div>
-                <div class="col-xs-7" class="title"> Puss In Boots </div>
-                <div class="col-xs-5" class="price"> $10.99 </div>
-                <div class="productTagline">
-                    <ul>
-                        <li>All that I need, are the boots!</li>
-                        <li>You made the cat angry. You do not want to make the cat angry.</li>
-                        <li>Hello? You are hiding from me? I like to play the games too. </li>
-                        <br>
-                    </ul>
-                </div>
-            </div>
+	<!-- row of 3 - third cats -->
+	<div class="col-md-4">
+	   <div id="lobsterCat" class="catCostume">
+	   </div> 
+	</div>
+	<div class="col-md-4">
+	   <div id="lionCat" class="catCostume">
+	   </div> 
+	</div>
+	<div class="col-md-4">
+		<div id="pussInBoots" class="catCostume">
+	    </div> 
+	</div>
 
-<!-- row of 2 -  bottom -->
-            <div class="col-md-4">
-                <div class="productPhoto" id="product4_princess">
-                    <img src="imagesResized/fairyPrincess.jpg" class="img-circle" height="940" width="940">
-                </div>
-                <div class="col-xs-7" class="title">Fluffy Princess </div>
-                <div class="col-xs-5" class="price"> $10.99 </div>
-                <div class="productTagline">
-                    <ul>
-                        <li>Once upon a time in a faraway land,</li>
-                        <li>there was a tiny kingdom;</li>
-                        <li>peaceful, prosperous,</li>
-                        <li>and rich in romance and tradition.</li>
-                        <br>
-                    </ul>
-                    <p> </p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="productphoto" id="product3_wizard">
-                    <img src="imagesResized/catWizard.jpg" class="img-circle" height="500" width="500">
-                </div>
-                <div class="col-xs-7" class="title">Wizard </div>
-                <div class="col-xs-5" class="price"> $8.99 </div>
-                <div class="productTagline">
-                    <ul>
-                        <li> It does not do to dwell on dreams and forget to live.
-                        </li>
-                        <li>Hermione: It's a cat, Ronald!</li>
-                        <li>A cat? Is that what they told you?</li>
-                        <li>It looks more like a pig with hair if you ask me.</li>
-                        <br>
-                    </ul>
-                    <p> </p>
-                    <p> </p>
-                </div>
-            </div>
+	<!-- row of 2 -  bottom cats -->
+	<div class="col-md-4">
+	    <div id="princessPrettyFluff" class="catCostume">
+	    </div> 
+	</div>
+	<div class="col-md-4">
+	 	<div id="wizardCat" class="catCostume">
+		</div>
+	</div>
         </div>
     </div>
+
+<!-- DOG STORE -->
+<!-- row of 3 top dogs -->
+<div class="dogStore">
+ <div class="row">
+		<div class="col-md-4">
+			<div id="tortoiseDog" class="dogStore">
+			</div>                  
+		</div>
+	 </div>
+	<div class="col-md-4">
+	   <div id="snookiDog" class="dogStore">
+	   </div>
+	</div>
+	<div class="col-md-4">
+		<div id="tRexDog" class="dogStore">
+		</div>
+	</div>
+
+	<!-- row of 3 second cats-->            
+	<div class="col-md-4">
+	   <div id="giftingDog" class="dogStore">
+	   </div> 
+	</div>
+	<div class="col-md-4">
+	   <div id="pirateDog" class="dogStore">
+	   </div>
+	</div>
+	<div class="col-md-4">
+	   <div id="pickleDog" class="dogStore">
+	   </div>
+
+	<!-- row of 3 - third cats -->
+	<div class="col-md-4">
+	   <div id="martiniDog" class="dogStore">
+	   </div> 
+	</div>
+	<div class="col-md-4">
+	   <div id="lionDog"class="dogStore">
+	   </div> 
+	</div>
+	<div class="col-md-4">
+		<div id="jellyBellyDog" class="dogStore">
+	    </div> 
+	</div>
+
+	<!-- row of 2 -  bottom cats -->
+	<div class="col-md-4">
+	    <div id="hotDogDog" class="dogStore">
+	    </div> 
+	</div>
+	<div class="col-md-4">
+	 	<div id="butterflyDog" class="dogStore">
+		</div>
+	</div>
+        </div>
+    </div>
+
+<script>
+
+//arrays of product objects 
+
+  var catArr = [bikerCat, sandwichCat, diabloKitty, frogKitten, hawaiianVacation, sanrioCat, lobsterCat, lionCat, pussInBoots, princessPrettyFluff, wizardCat];
+
+   var dogArr = [tortoiseDog, snookiDog, tRexDog, giftingDog, priateDog, pickeleDog, martiniDog, lionDog, jellyBellyDog, hotDogDog, butterflyDog];
+
+// the function that will add all the 
+      var addToPage = function(divId, objectName) {
+         $(divId).html(object.title);
+         $(divId).append(object.price);
+         $(divId).append(object.tagline);
+         $(divId).append(object.materials);
+         $(divId).append(object.careInstructions);
+         $(divId).append(object.notes);
+         $(divId).append(object.pictureURL);
+      };
+
+//calls to add to page function
+      addToPage('#bikerCat', catArr[0]);
+      addToPage('#sandwichCat', catArr[1]);
+      addToPage('#diabloKitty', catArr[2]);
+      addToPage('#frogKitten', catArr[3]);
+      addToPage('#hawaiianVacation', catArr[4]);
+      addToPage('#sanrioCat', catArr[5]);
+      addToPage('#lobsterCat', catArr[6]);
+      addToPage('#lionCat', catArr[7]);
+      addToPage('#pussInBoots', catArr[8]);
+      addToPage('#princessPrettyFluff', catArr[9]);
+      addToPage('#wizardCat', catArr[10]);
+
+      addToPage('#tortoiseDog', dogArr[0]);
+      addToPage('#snookiDog', dogArr[1]);
+      addToPage('#tRexDog', dogArr[2]);
+      addToPage('#giftingDog', dogArr[3]);
+      addToPage('#priateDog', dogArr[4]);
+      addToPage('#pickeleDog', dogArr[5]);
+      addToPage('#martiniDog', dogArr[6]);
+      addToPage('#lionDog', dogArr[7]);
+      addToPage('#jellyBellyDog', dogArr[8]);
+      addToPage('#hotDogDog', dogArr[9]);
+      addToPage('#butterflyDog', dogArr[10]);
+
+// objects of products 
+var bikerCat = {
+id: "bikerCat",
+class:"catCostume",
+category: "outfits",
+title : '<h5 class="title"> Biker Cat </h5>',
+price : 12.99,
+tagline : '<h6 class="tagline"> Perfect for a Sons of Anarchy marathon </h6>',
+materials : '<h6 class="materials"> Made from Vegan Leather <h6>',
+careInstructions : '<h6 class="careInstructions"> Handwash Only. </h6>',
+notes : '<h6 class="notes"> Goggles not included. </h6>',
+pictureURL : "https://www.flickr.com/gp/111120137@N06/G7up67"
+};
+
+var sandwichCat = {
+id: "sandwichCat",
+class: "catCostume",
+title : '<h5 class="title"> Kitten Noms </h5>',
+price : 7.99,
+tagline : '<h6 class="tagline"> For when you are that bored. </h6>',
+materials : '<h6 class="materials"> Made from wheat, lettuce and tomato. </h6>',
+careInstructions : '<h6 class="careInstructions"> Handwash Only. </h6>',
+notes : '<h6 class="notes"> No kittens were harmed in the making of this sandwich. </h6>',
+pictureURL : "https://flic.kr/p/zT4HK3"
+};
+
+var diabloKitty = {
+id: "diabloKitty",
+class: "catCostume",
+title : '<h5 class="title"> Diablo Kitty </h5>',
+price : 4.99,
+tagline : '<h6 class="tagline"> Devilishly Cute. </h6>',
+materials : '<h6 class="materials"> Made from satin. </h6>',
+careInstructions : '<h6 class="careInstructions"> Handwash Only. </h6>',
+notes : '<h6 class="notes"> Use with extreme caution. <h6>',
+pictureURL : "https://flic.kr/p/yYuiD2"
+};
+
+var frogKitten = {
+id: "frogKitten",
+class: "catCostume",
+title : '<h5 class="title"> Frog Kitten </h5>',
+price : 9.99,
+tagline : '<h6 class="tagline"> Hoppety Hip Kitten. </h6>',
+materials : '<h6 class="materials"> Made from frogs legs. </h6>',
+careInstructions : '<h6 class="careInstructions"> Air dry. </h6>',
+notes: '<h6 class="notes"> Do not drop in a lake. </h6>',
+pictureURL : "https://flic.kr/p/zVnjJp"
+};
+
+var hawaiianVacation = {
+id: "hawaiianVacation",
+class: "catCostume",
+title :  '<h5 class="title"> Hawaiian Vacation Cat </h5>',
+price :  11.99,
+tagline : '<h6 class="tagline"> Great for BBQ season. </h6>',
+materials : '<h6 class="materials"> Made from faux florals. </h6>',
+careInstructions : '<h6 class="careInstructions"> Hula dry. </h6>',
+notes : '<h6 class="notes"> Perfect for naps. </h6>',
+pictureURL : "https://flic.kr/p/zVnjJe"
+};
+
+var sanrioCat = {
+id: "sanrioCat",
+class: "catCostume",
+title : '<h5 class="title"> Sanrio Hello Kitty </h5>',
+price : 11.99,
+tagline : '<h6 class="tagline"> Purrrfectly feline. </h6>',
+materials : '<h6 class="materials"> Made from candy. </h6>',
+careInstructions : '<h6 class="careInstructions"> Handwash. </h6>',
+notes : '<h6 class="notes"> For all ages. </h6>',
+pictureURL : "https://flic.kr/p/zCRDfx"
+};
+
+var lobsterCat = {
+id: "lobsterCat",
+class: "catCostume",
+title : '<h5 class="title"> Rock Lobster Cat </h5>',
+price : 10.99,
+tagline : '<h6 class="tagline"> When your cat is crabby, cheer them up with a costume! </h6>',
+materials : '<h6 class="materials"> Made from faux crustation. </h6>',
+careInstructions : '<h6 class="careInstructions"> Wash in saltwater. </h6>',
+notes : '<h6 class="notes"> Do not boil. </h6>',
+pictureURL : "https://flic.kr/p/yYkDu3"
+};
+
+var lionCat = {
+id: "lionCat",
+class: "catCostume",
+title : '<h5 class="title"> King of the Felines </h5>',
+price : 100.99,
+tagline : '<h6 class="tagline"> A Roaring good time. </h6>',
+materials : '<h6 class="materials"> Made from 100% fun. </h6>',
+careInstructions : '<h6 class="careInstructions"> Wash in the Serengeti. </h6>',
+notes : '<h6 class="notes"> Not created for taming. </h6>',
+pictureURL : "https://flic.kr/p/zCM4EJ"
+};
+
+var pussInBoots = {
+id: "pussInBoots",
+class: "catCostume",
+title : '<h5 class="title"> Puss In Boots </h5>',
+price : 25.99,
+tagline : '<h6 class="tagline"> All that I need, are the boots! </h6>',
+materials : '<h6 class="materials"> Made in Spain. </h6>',
+careInstructions : '<h6 class="careInstructions"> Do not wash. </h6>',
+notes : '<h6 class="notes"> You made the cat angry. You do not want to make the cat angry. </h6>',
+pictureURL : "https://flic.kr/p/zCM4BN"
+};
+
+var princessPrettyFluff = {
+id: "princessPrettyFluff",
+class: "catCostume",
+title : '<h5 class="title"> Fluffy Princess Kitty </h5>',
+price : 10.99,
+tagline : '<h6 class="tagline"> Pretty pretty princess. <h6>',
+materials : '<h6 class="materials"> Sparkles and jewels. </h6>',
+careInstructions : '<h6 class="careInstructions"> Caviar and cashmere. </h6>',
+notes: '<h6 class="notes"> Once upon a time in a faraway land,there was a tiny kingdom. </h6>',
+pictureURL : "https://flic.kr/p/zVnjGk"
+};
+
+var wizardCat = {
+id: "wizardCat",
+class:"catCostume",
+title : '<h5 class="title"> Wizard Cat </h5>',
+price : 8.99,
+tagline : '<h6 class="tagline"> I cast a spell on mew. </h6>',
+materials : '<h6 class="materials"> Witches brew and sinewy fibres. </h6>',
+careInstructions : '<h6 class="careInstructions"> Boil with eye of newt. </h6>',
+notes : '<h6 class="notes"> Do not wear on a full moon. </h6>',
+pictureURL : "https://flic.kr/p/zUewSw"
+};
+
+// Start Dog objects
+
+var tortoiseDog = {
+id: "tortoiseDog",
+class: "dogStore",
+productClass: "dogCostume",
+title : '<h5 class="title"> Tortoise Dog </h5>',
+price : 4.99,
+tagline : '<h6 class="tagline"> Heros in a HalfShell. </h6>',
+materials : '<h6 class="materials"> Pizza and cotton. </h6>',
+careInstructions : '<h6 class="careInstructions"> Feed pizza daily. </h6>',
+notes : '<h6 class="notes"> May encourage crime fighting in some breeds. </h6>',
+pictureURL : "https://flic.kr/p/zV8ujA"
+};
+
+var snookiDog = {
+id: "snookiDog",
+class: "dogStore",
+title : '<h5 class="title"> Snooki Mutt </h5>',
+price : 0.99,
+tagline : '<h6 class="tagline"> Take me to the Shore. </h6>',
+materials : '<h6 class="materials"> Spandex and spanx. </h6>',
+careInstructions : '<h6 class="careInstructions"> Burritos and long islands. </h6>',
+notes : '<h6 class="notes"> May cause alcoholism. <h6>',
+pictureURL : "https://flic.kr/p/zEVnYk"
+};
+
+var tRexDog = {
+id: "tRexDog",
+class: "dogStore",
+title: '<h5 class="title"> T-Rex Pup </h5>',
+price : 99.99,
+tagline : '<h6 class="tagline"> Rawrrrrr. </h6>',
+materials : '<h6 class="materials"> Fossilized amber. </h6>',
+careInstructions : '<h6 class="careInstructions"> Allow to sit 65 million years. </h6>',
+notes : '<h6 class="notes"> Vintage. </h6>',
+pictureURL : "https://flic.kr/p/z1pcvE"
+};
+
+var giftingDog = {
+id: "giftingDog",
+class: "dogStore", 
+title : '<h5 class="title"> Care Package Pup </h5>',
+price : 0,
+tagline : '<h6 class="tagline"> Let me deliver this care Package </h6>',
+materials : '<h6 class="materials"> Ribbon, and recycled paper. </h6>',
+careInstructions : '<h6 class="careInstructions"> Handle with care. </h6>',
+notes : '<h6 class="notes"> Vintage-like. </h6>',
+pictureURL : "https://flic.kr/p/zEVo2M"
+};
+
+var priateDog = {
+id: "pirateDog",
+class: "dogStore",
+title : '<h5 class="title"> Pirate Puppy </h5>',
+price : 50,
+tagline : '<h6 class="tagline"> For your treasure. </h6>',
+materials : '<h6 class="materials"> Musty damp cloth. </h6>',
+careInstructions : '<h6 class="careInstructions"> Arrrr be careful there. </h6>',
+notes : '<h6 class="careInstructions"> Pillaged. <h6>',
+pictureURL : "https://flic.kr/p/z1xUL8"
+};
+
+var pickeleDog = {
+id: "pickleDog",
+class: "dogStore",
+title : '<h5 class="title">Pickled Pup</h5>',
+price : 3.99,
+tagline : '<h6 class="tagline"> Cool as a Cucumber. </h6>',
+materials : '<h6 class="materials"> Gigantic pickle. </h6>',
+careInstructions : '<h6 class="careInstructions"> Brine when not in use. </h6>',
+notes : '<h6 class="notes"> Pairs well with sandwich cat.</h6>',
+pictureURL : "https://flic.kr/p/zWhUy9"
+};
+
+var martiniDog = {
+id: "martiniDog",
+class: "dogStore",
+title : '<h5 class="title"> Martini Dog </h5>',
+price : 12.99,
+tagline : '<h6 class="tagline"> Walked not shaken. </h6>',
+materials : '<h6 class="materials"> Gin, vermouth, and an olive. </h6>',
+careInstructions : '<h6 class="careInstructions"> Take to the vet. </h6>',
+notes : '<h6 class="notes"> Just for giggles. </notes>',
+pictureURL : "https://flic.kr/p/zEQLML"
+};
+
+var lionDog = {
+id: "lionDog",
+class: "dogStore",
+title : '<h5 class="title"> Lion Dog </h5>',
+price : 100.99,
+tagline : '<h6 class="tagline"> For the pride of the family. </h6>',
+materials : '<h6 class="materials"> Gin, vermouth, and an olive. </h6>',
+careInstructions : '<h6 class="careInstructions"> Wash in the Serengeti. </h6>',
+notes : '<h6 class="notes"> Not made from real lion. </h6>',
+pictureURL : "https://flic.kr/p/zEP8eU"
+};
+
+var jellyBellyDog = {
+id: "jellyBellyDog",
+class: "dogStore",
+title : '<h5 class="title"> Jelly Belly Dog </h5>',
+price : 4.99,
+tagline : '<h6 class="tagline"> For your lil jelly bean. </h6>',
+materials : "Made from real Jelly Belly Candy.",
+careInstructions : '<h6 class="careInstructions"> Do not feed to your dog. </h6>',
+notes : '<h6 class="careInstructions"> Consume fun in one sitting. </h6>',
+pictureURL : "https://flic.kr/p/z1xUN2"
+};
+
+var hotDogDog = {
+id: "hotDogDog",
+class: "dogStore",
+title :'<h5 class="title"> Hot Dog! </h5>',
+price : 9.99,
+tagline : '<h6 class="tagline"> Relish your Pup.</h6>',
+materials : '<h6 class="materials"> 100% real mustard.</h6>', 
+careInstructions : '<h6 class="careInstructions"> Do not leave in packaging. </h6>',
+notes : '<h6 class="notes"> Consume in one sitting.</h6>',
+pictureURL : "https://flic.kr/p/z1pcEh"
+};
+
+var butterflyDog = {
+id: "butterflyDog",
+class: "dogStore",
+title : '<h5 class="title"> Butterfly Dog </h5>',
+price : 13.99,
+tagline : '<h6 class="tagline"> Let your dog fly free. </h6>',
+materials : '<h6 class="materials"> 100% polyester. </h6>',
+careInstructions : '<h6 class="careInstructions"> Frequent walks. </h6>',
+notes : '<h6 class="careInstructions"> May cause drowsiness. <h6>',
+pictureURL : "https://flic.kr/p/zYmQwk"
+};
+
+</script>
+
+
+ </body>
     <!-- HTML5 uses footer instead of divs w/ids -->
     <footer class="footer">
         <div class="container">
             <p class="text-muted"> Company information and social share buttons </p>
         </div>
     </footer>
-
 </html>
